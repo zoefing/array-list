@@ -183,7 +183,7 @@ public class DynamicArray {
         // establish data type
         String dataType = "String"; // temp placeholder
         
-        //figure out how long list is
+        // figure out how long list is
         int sliceLength = endIndex - startIndex + 1;
         System.out.println("Slice length: " + sliceLength);
 
@@ -296,17 +296,17 @@ public class DynamicArray {
         System.out.println("Testing slice()...");
         System.out.println("Current length: " + dynamicArray.baseArray.length);
         System.out.println("Slicing from index 1 to index 3");
-        DynamicArray slice = (DynamicArray) dynamicArray.slice(1, 3); // temp, unsure why this works??
+        DynamicArray slice = (DynamicArray) dynamicArray.slice(1, 3);
         System.out.println("Value(s) sliced");
         System.out.println(""); // line break
 
         // confirm whether slice worked
         System.out.println("Confirming slice worked...");
-        System.out.println("Extraction length: " + slice.baseArray.length);
+        System.out.println("Extraction length: " + slice.baseArray.length); 
         System.out.println(""); // line break
-        System.out.println("Value at index 0: " + slice.get(0));
-        System.out.println("Value at index 1: " + slice.get(1));
-        System.out.println("Value at index 2: " + slice.get(2));
+        System.out.println("Value at index 0: " + dynamicArray.get(0));
+        System.out.println("Value at index 1: " + dynamicArray.get(1));
+        System.out.println("Value at index 2: " + dynamicArray.get(2));
         System.out.println(""); // line break
     }
 }
